@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AuctionsTable</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/aboutus.css">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+    
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark auction-navbar">
+        <div class="container-fluid">
+            <a class="navbar-brand d-flex align-items-center" href="#">
+                <img src="image`s/Auction Table Logo-01.png" alt="Logo" style="height: 75px; width: auto;">
+                AuctionsTable
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0 ">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/aboutus.html">About us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Completed Auctions/Compauct.html">Completed Auction</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/disclaimerpage.html">Disclaimer page</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/contact us.html">Contact us</a>
+                    </li>
+                </ul>
+                <div class="d-flex align-items-center">
+                    <!-- <button class="btn btn-warning sign-in-btn">Sign In / Login</button> -->
+                    <a href="signin.html" id="loginButton" class="btn btn-warning sign-in-btn">Signin</a>
+                    <a href="login.html" id="loginButton" class="btn btn-warning sign-in-btn" style="margin-left: 10px;">Login</a>
+
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Sub-Navbar for categories -->
+    <nav class="navbar navbar-expand-lg navbar-dark auction-sub-navbar">
+        <div class="container-fluid">
+            <ul class="navbar-nav ms-5 mb-2 mb-lg-0">
+                <li class="nav-item"><a class="nav-link" href="/furniture/furniture.html">Furniture</a></li>
+                <li class="nav-item"><a class="nav-link" href="/Vintage/vintage.html">Vintage</a></li>
+                <li class="nav-item"><a class="nav-link" href="/Arts/arts.html">Art`s</a></li>
+                <li class="nav-item"><a class="nav-link" href="/Antiques/antiques.html">Antiques</a></li>
+                <li class="nav-item"><a class="nav-link" href="/Completed Auctions/Compauct.html">Completed Auction</a></li>
+                <li class="nav-item"><a class="nav-link" href="/Jewelry/Jewelry.html">jewelry</a></li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        Categories
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="/sitemap.html">Sitemap</a></li>
+                        <li><a class="dropdown-item" href="/Completed Auctions/Compauct.html">Another action</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <div class="social-icons">
+                <a href="#" class="me-2"><i class="fa-solid fa-bag-shopping"></i></a>
+                <a href="#" class="me-4 "><i class="fa-solid fa-circle-user"></i></i></a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- main section  -->
+    <!-- Video Background Section (right after header) -->
+    <section class="video-background-section">
+        <video autoplay loop muted playsinline class="background-video">
+            <!-- Replace 'your-auction-video.mp4' with the actual path to your video -->
+            <source src="videos/main video-bg.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div class="video-overlay"></div>
+        <div class="video-content">
+            <h1>Experience the Thrill of the Auction</h1>
+            <p>Your premier destination for unique finds and exciting bidding.</p>
+        </div>
+    </section>
+    <main>
+        <section class="about-section">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6 mb-4 mb-lg-0">
+                        <!-- Video Container -->
+                        <div class="about-video-container">
+                            <!-- Removed 'controls' attribute -->
+                            <video autoplay loop muted playsinline>
+                                <source src="videos/4932722_Person_People_3840x2160.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 about-content">
+                        <span class="section-tag">ABOUT US?</span>
+                        <p>We are a leading online auction platform that connects buyers and sellers from around the
+                            world. Our mission is to provide a fair and transparent marketplace where everyone can find
+                            great deals and unique items.</p>
+                        <div class="feature-item">
+                            <!-- Placeholder for icon, you might use Font Awesome or similar -->
+                            <div class="icon">
+                                                        <i class="fa-solid fa-rocket"></i>
+
+                            </div>
+                            <div>
+                                <h5>Fast Support</h5>
+                                <p>We provide quick and efficient support to help you with any questions or issues you
+                                    may have.</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <div class="icon">
+                                                        <i class="fa-solid fa-face-smile"></i>
+
+                            </div>
+                            <div>
+                                <h5>Happy Customers</h5>
+                                <p>"Absolutely thrilled with my win—fast shipping, great communication, and items
+                                    exactly as described!"</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <div class="icon">
+                                                        <i class="fa-solid fa-clock"></i>
+
+                            </div>
+                            <div>
+                                <h5>24/7 Support</h5>
+                                <p>We offer round-the-clock support to ensure you have a smooth and enjoyable auction
+                                    experience.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- matric codestart form here  -->
+    <div class="stats-container">
+    <div class="stat-item">
+        <span class="stat-number">32,594</span>
+        <span class="stat-description">NUMBER OF CLIENTS</span>
+    </div>
+    <div class="stat-item">
+        <span class="stat-number">25</span>
+        <span class="stat-description">YEARS OF EXPERIENCE</span>
+    </div>
+    <div class="stat-item">
+        <span class="stat-number">1,029</span>
+        <span class="stat-description">EMPLOYEES</span>
+    </div>
+    <div class="stat-item">
+        <span class="stat-number">10,200</span>
+        <span class="stat-description">CUP OF COFFEES</span>
+    </div>
+</div>    <!-- matric code end form here / -->
+
+
+    <!-- how it work  code -->
+    <section class="how-it-works-section">
+        <div class="container">
+            <div class="row justify-content-center text-center mb-5">
+                <div class="col-12">
+                    <p class="how-it-works-title">HOW?</p>
+                    <h2 class="how-it-works-heading">How It Works</h2>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-md-3 col-sm-6 d-flex align-items-stretch">
+                    <div class="step-item d-flex flex-column align-items-center">
+                        <div class="step-icon-wrapper">
+                            <i class="fas fa-user step-icon"></i>
+                        </div>
+                        <h3 class="step-title">Register</h3>
+                        <p class="step-description">Create an account to get started with our auction platform.</p>
+                        <i class="fas fa-chevron-right step-arrow"></i>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 d-flex align-items-stretch">
+                    <div class="step-item d-flex flex-column align-items-center">
+                        <div class="step-icon-wrapper">
+                            <i class="fas fa-money-bill-wave step-icon"></i>
+                            <!-- Using money-bill-wave for the money icon -->
+                        </div>
+                        <h3 class="step-title">Buy or Bid</h3>
+                        <p class="step-description">Browse our selection of items and place your bids or make purchases.
+                        </p>
+                        <i class="fas fa-chevron-right step-arrow"></i>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 d-flex align-items-stretch">
+                    <div class="step-item d-flex flex-column align-items-center">
+                        <div class="step-icon-wrapper">
+                            <i class="fas fa-cocktail step-icon"></i> <!-- Using cocktail for the glass icon -->
+                        </div>
+                        <h3 class="step-title">Submit a bid</h3>
+                        <p class="step-description">if you're interested in an item, submit a bid and compete with other
+                            bidders.</p>
+                        <i class="fas fa-chevron-right step-arrow"></i>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 d-flex align-items-stretch">
+                    <div class="step-item d-flex flex-column align-items-center">
+                        <div class="step-icon-wrapper">
+                            <i class="fas fa-trophy step-icon"></i>
+                        </div>
+                        <h3 class="step-title">Win</h3>
+                        <p class="step-description">Congratulations! You've won an item and can now proceed with the
+                            purchase.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end here  -->
+    <!-- 
+  team testimonial  code start form here  -->
+    <section class="testimonials-section">
+        <div class="container">
+            <div class="testimonial-header">
+                <p>TESTIMONIALS</p>
+                <h2>Happy Clients</h2>
+            </div>
+            <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                </div>
+                <div class="carousel-inner">
+                    <!-- Testimonial Slide 1 -->
+                    <div class="carousel-item active">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-5 col-md-8 mb-4 mb-lg-0">
+                                <div class="testimonial-card">
+                                    <div class="client-info">
+                                        <img src="image`s/client-1.jpg" alt="Allison Holmes" class="client-avatar">
+                                        <div>
+                                            <h5 class="client-name">Allison Holmes</h5>
+                                            <p class="client-title">Designer</p>
+                                        </div>
+                                    </div>
+                                    <p class="testimonial-text">"if you're looking for a reliable and professional team
+                                        to handle your project, look no further. They delivered beyond my expectations!"
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-lg-5 col-md-8">
+                                <div class="testimonial-card">
+                                    <div class="client-info">
+                                        <img src="image`s/client-2.jpg" alt="Allison Holmes" class="client-avatar">
+                                        <div>
+                                            <h5 class="client-name">Allison Holmes</h5>
+                                            <p class="client-title">Designer</p>
+                                        </div>
+                                    </div>
+                                    <p class="testimonial-text">"Working with this team was an absolute pleasure. Their
+                                        attention to detail and creative approach made all the difference in the final
+                                        product."</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Testimonial Slide 2 (Example of another slide) -->
+                    <div class="carousel-item">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-5 col-md-8 mb-4 mb-lg-0">
+                                <div class="testimonial-card">
+                                    <div class="client-info">
+                                        <img src="image`s/client-3.jpg" alt="Another Client" class="client-avatar">
+                                        <div>
+                                            <h5 class="client-name">Another Client</h5>
+                                            <p class="client-title">Developer</p>
+                                        </div>
+                                    </div>
+                                    <p class="testimonial-text">"This is another fantastic testimonial from a very happy
+                                        client. The service was excellent and I couldn't be more pleased with the
+                                        results!"</p>
+                                </div>
+                            </div>
+                            <div class="col-lg-5 col-md-8">
+                                <div class="testimonial-card">
+                                    <div class="client-info">
+                                        <img src="image`s/client-4.jpg" alt="Third Client" class="client-avatar">
+                                        <div>
+                                            <h5 class="client-name">Third Client</h5>
+                                            <p class="client-title">Manager</p>
+                                        </div>
+                                    </div>
+                                    <p class="testimonial-text">"Absolutely amazing experience! Highly recommend to
+                                        anyone looking for top-notch quality and professional service."</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end here -->
+    <!-- footer start for here  -->
+    <footer class="site-footer mt-5">
+        <div class="footer-top">
+            <div class="contact-info-item">
+                <i class="fas fa-map-marker-alt icon"></i>
+                <div>
+                    <h4>Find us</h4>
+                    <p>Pakistan</p>
+                </div>
+            </div>
+            <div class="contact-info-item">
+                <i class="fas fa-phone-alt icon"></i>
+                <div>
+                    <h4>Call us</h4>
+                    <p>92+-234-5678-901</p>
+                </div>
+            </div>
+            <div class="contact-info-item">
+                <i class="fas fa-envelope icon"></i>
+                <div>
+                    <h4>Mail us</h4>
+                    <p>E-mail@info.com</p>
+                </div>
+            </div>
+        </div>
+        <div class="footer-middle">
+            <div class="footer-about">
+                <div class="footer-logo">
+                    <span class="bg-logo">AT</span> <span class="web-designer-logo">auction <br>table</span>
+                </div>
+                <p>Welcome to [Your Auction Site Name], where the thrill of the bid meets the joy of discovery! Dive
+                    into a vibrant marketplace bursting with unique treasures, rare collectibles, and everyday
+                    essentials. Whether you're hunting for a steal, selling your cherished items, or just love the rush
+                    of a last-minute bid, our community is here for you. Start exploring, start bidding, and let the
+                    adventure begin!</p>
+                <div class="social-links">
+                    <h4>Follow us</h4>
+                    <a href="#" class="social-icon facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social-icon twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-icon instagram"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="footer-links">
+                <h4>Useful Links <span class="underline"></span></h4>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">contact us</a></li>
+                    <li><a href="disclaimerpage.html">Disclimer'page</a></li>
+                    <li><a href="#">Find Art's</a></li>
+                    <li><a href="#">furniture</a></li>
+                </ul>
+                <ul>
+                    <li><a href="#">About us</a></li>
+                    <li><a href="#">painting</a></li>
+                    <li><a href="#">sitmap page</a></li>
+                    <li><a href="#">completed'auction'page</a></li>
+                    <li><a href="#">FAQ`s</a></li>
+                </ul>
+            </div>
+            <div class="footer-subscribe">
+                <h4>Subscribe <span class="underline"></span></h4>
+                <p>Don't miss to subscribe to our new feeds, kindly fill the form below.</p>
+                <form action="#">
+                    <input type="email" placeholder="Email Address">
+                    <button type="submit"><i class="fas fa-paper-plane"></i></button>
+                </form>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>Copyright © 2026, All Right Reserved <span class="highlight">Codebym.ali</span></p>
+            <nav class="footer-nav">
+                <a href="index.html">Home</a>
+                <a href="#">Terms</a>
+                <a href="#">Privacy Policy</a>
+                <a href="contactpage.html">Contact</a>
+            </nav>
+        </div>
+    </footer>
+    <!-- footer end form here  -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            console.log("AuctionsTable website loaded!");
+
+            // Example of a simple interactive element
+            const heroCategoryButtons = document.querySelectorAll('.hero-cat-btn');
+            heroCategoryButtons.forEach(button => {
+                button.addEventListener('click', function () {
+                    heroCategoryButtons.forEach(btn => btn.classList.remove('active'));
+                    this.classList.add('active');
+                    // In a real app, you'd fetch/filter auctions based on this category
+                    console.log(`Category selected: ${this.textContent}`);
+                });
+            });
+
+            // You could add logic here for:
+            // - Dynamic countdown timers for auctions
+            // - Image carousels/sliders (if you add one)
+            // - Form submissions (Sign In / Join)
+            // - Lazy loading images, etc.
+        });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

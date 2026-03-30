@@ -1,0 +1,250 @@
+ body {
+  font-family: Arial, sans-serif;
+  background-color: #f8f9fa;
+}
+
+/* Custom Navbar Styles */
+.auction-navbar {
+  background-color: #1a2a47;
+  /* Dark blue from image */
+  min-height: 50px;
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+  position: sticky;
+  top: 0;
+  z-index: 1020;
+  /* Above hero section */
+}
+
+
+.auction-navbar .navbar-brand {
+  color: #ff9800;
+  /* Gold for logo */
+  font-weight: bold;
+  font-size: 2.5rem;
+}
+
+.navber-brand {
+  display: flex;
+  align-items: center;
+  padding: 0 !important;
+  line-height: 1;
+}
+
+.auction-navbar .nav-link {
+  color: rgb(255, 255, 255);
+  margin-right: 1.5rem;
+  font-size: 1.3rem;
+}
+
+
+.auction-navbar .nav-link.active,
+.auction-navbar .nav-link:hover {
+  color: #ff8900;
+
+}
+
+.social-icons {
+  color: black;
+}
+
+
+
+.sign-in-btn {
+  background-color: #ff9800;
+  /* Gold button */
+  color: #1a2a47;
+  border: none;
+  padding: 0.5rem 1.5rem;
+  font-weight: bold;
+  border-radius: 0.25rem;
+}
+
+.sign-in-btn:hover {
+  background-color: #c7892d;
+}
+
+/* Sub-Navbar for Categories */
+.auction-sub-navbar {
+  background-color: #0e1a2f;
+  /* Same dark blue */
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+}
+
+.auction-sub-navbar .nav-link {
+  color: #fff;
+  padding: 0.5rem 1rem;
+  font-size: 0.95rem;
+}
+
+.auction-sub-navbar .nav-link:hover {
+  color: #ff9800;
+}
+
+
+.auction-sub-navbar .social-icons a {
+  color: #fff;
+  font-size: 18px;
+  margin-left: 15px;
+  transition: color 0.3s ease;
+}
+
+.auction-sub-navbar .social-icons a:hover {
+  color: #ff9800;
+}
+
+
+
+/* header responsiveness  here start*/
+/* Responsive adjustments */
+@media (max-width: 991.98px) {
+
+  /* Medium devices and down */
+  .hero-categories {
+    flex-wrap: wrap;
+    /* Allow buttons to wrap */
+    bottom: auto;
+    top: 85%;
+    /* Adjust position for smaller screens */
+    transform: translateY(-50%);
+    padding: 0 10px;
+  }
+
+  .hero-cat-btn {
+    margin: 5px;
+    min-width: unset;
+    flex-grow: 1;
+    /* Allow buttons to grow */
+  }
+
+  .auction-navbar .d-flex.align-items-center .nav-link {
+    display: none !important;
+    /* Hide social icons on small screens */
+  }
+}
+
+@media (max-width: 767.98px) {
+
+  /* Small devices and down */
+  .hero-content h1 {
+    font-size: 2.0rem;
+  }
+
+  .hero-content p {
+    font-size: 1.2rem;
+  }
+
+  .hero-cat-btn {
+    font-size: 0.9rem;
+    padding: 0.6rem 1rem;
+  }
+
+  .auction-sub-navbar .navbar-nav {
+    flex-direction: column;
+    /* Stack sub-nav items */
+    text-align: center;
+  }
+}
+/* end here header  */
+
+
+
+
+/* main content of the designing start here  */
+
+
+/* Custom Styles for Forms */
+.signup-container, .login-container {
+    background-color: #2b3e51; /* Dark blue background for forms */
+    max-width: 400px; /* Limit width on larger screens */
+    width: 100%; /* Take full width on smaller screens */
+    color: #ffffff; /* Default text color */
+    justify-content: center;
+    align-items: center;
+}
+
+h2 {
+    font-size: 24px;
+    font-weight: normal;
+    border-color: rgba(255, 255, 255, 0.1) !important; /* Specific border color for heading */
+}
+
+.form-label {
+    font-size: 14px;
+}
+
+.form-control {
+    background-color: #ffffff; /* White input fields */
+    color: #333;
+    font-size: 16px;
+    border: none;
+    padding: 12px;
+}
+
+.form-control::placeholder {
+    color: #999;
+}
+
+/* Custom button colors */
+.signup-button {
+    background-color: #f39c12; /* Orange button */
+    color: white;
+    border: none;
+    padding: 12px;
+    font-size: 18px;
+}
+.signup-button:hover {
+    background-color: #e68a00; /* Darker orange on hover */
+    color: white; /* Keep text white on hover */
+}
+
+.login-button {
+    background-color: #3f7de0; /* Blue button */
+    color: white;
+    border: none;
+    padding: 12px;
+    font-size: 18px;
+}
+.login-button:hover {
+    background-color: #2b6ac5; /* Darker blue on hover */
+    color: white; /* Keep text white on hover */
+}
+
+.form-check-input {
+    accent-color: #3f7de0; /* Blue checkbox accent */
+    margin-right: 5px; /* Space between checkbox and label */
+}
+
+.form-check-label {
+    font-size: 14px;
+}
+
+.forgot-password {
+    color: #a0a0a0;
+    text-decoration: none;
+    font-size: 14px;
+}
+.forgot-password:hover {
+    color: #ffffff;
+}
+
+/* Responsive adjustments using Bootstrap's default breakpoints */
+@media (max-width: 576px) { /* For screens smaller than 576px (xs breakpoint) */
+    .signup-container, .login-container {
+        padding: 20px; /* Reduce padding on very small screens */
+    }
+    h2 {
+        font-size: 20px;
+    }
+    .form-control, .signup-button, .login-button {
+        font-size: 14px;
+        padding: 10px;
+    }
+    .form-check-label, .forgot-password, .form-label {
+        font-size: 12px;
+    }
+}
+/* end here  /*

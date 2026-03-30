@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AuctionsTable</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark auction-navbar">
+        <div class="container-fluid">
+            <a class="navbar-brand d-flex align-items-center" href="#">
+                <img src="image`s/Auction Table Logo-01.png" alt="Logo" style="height: 75px; width: auto;">
+                AuctionsTable
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0 ">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/aboutus.html">About us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Completed Auctions/Compauct.html">Completed Auction</a>
+                    </li>
+            
+                    <li class="nav-item">
+                        <a class="nav-link" href="/disclaimerpage.html">Disclaimer page</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/contact us.html">Contact us</a>
+                    </li>
+                </ul>
+                <div class="d-flex align-items-center">
+                    <!-- <button class="btn btn-warning sign-in-btn">Sign In / Login</button> -->
+                    <a href="signin.html" id="loginButton" class="btn btn-warning sign-in-btn">Signin</a>
+                    <a href="login.html" id="loginButton" class="btn btn-warning sign-in-btn" style="margin-left: 10px;">Login</a>
+
+                </div>
+            </div>
+       </div>
+    </nav>
+    
+
+    <!-- Sub-Navbar for categories -->
+    <nav class="navbar navbar-expand-lg navbar-dark auction-sub-navbar">
+        <div class="container-fluid">
+            <ul class="navbar-nav ms-5 mb-2 mb-lg-0">
+                <li class="nav-item"><a class="nav-link" href="/furniture/furniture.html">Furniture</a></li>
+                <li class="nav-item"><a class="nav-link" href="/Vintage/vintage.html">Vintage</a></li>
+                <li class="nav-item"><a class="nav-link" href="/Arts/arts.html">Art`s</a></li>
+                <li class="nav-item"><a class="nav-link" href="/Antiques/antiques.html">Antiques</a></li>
+                <li class="nav-item"><a class="nav-link" href="/Completed Auctions/Compauct.html">Completed auction</a></li>
+                <li class="nav-item"><a class="nav-link" href="/Jewelry/Jewelry.html">jewelry</a></li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        Categories
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="/sitemap.html">Sitemap page</a></li>
+                        <li><a class="dropdown-item" href="/Completed Auctions/Compauct.html">Another action</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <div class="social-icons">
+                <a href="#" class="me-2"><i class="fa-solid fa-bag-shopping"></i></a>
+                <a href="#" class="me-4 "><i class="fa-solid fa-circle-user"></i></i></a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section text-center text-white d-flex align-items-center justify-content-center">
+        <div class="overlay"></div>
+        <div class="hero-content position-relative">
+            <h1>25 Years of Auction Excellence</h1>
+            <hr class="mb-3">
+            <p class="lead">Discover &bull; Bid &bull; Win</p>
+            <hr class="mb-4">
+            <hr class="mb-5 ">
+
+        </div>
+        <div class="hero-categories d-flex justify-content-center position-absolute bottom-0 w-100">
+    <a href="/furniture/furniture.html" class="btn hero-cat-btn active">Furniture</a>
+    <a href="/Painting/painting.html" class="btn hero-cat-btn">Paintings</a>
+    <a href="/Vintage/vintage.html" class="btn hero-cat-btn">Antiques</a>
+    <a href="/Electronics/electronics.html" class="btn hero-cat-btn">Electronics</a>
+</div>
+        </section>
+
+        
+    <!-- Latest Auctions Section -->
+    <section class="latest-auctions py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-4">Latest Auctions</h2>
+            <hr class="hr-3">
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-5 g-4">
+                <!-- Auction Item 1 -->
+                <div class="col">
+                    <div class="card h-100 auction-card">
+                        <img src="/image`s/latest auction.png" class="card-img-top" alt="Ancient Iron Wrist Watch">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Buttons, ceramic, Japan, Satsuma, late 19th / early 20th Century,
+                                eight various, five floral, one</h5>
+                            <div class="auction-meta d-flex justify-content-between align-items-center mt-3">
+                                <span class="text-muted">Starts, 2/05,</span>
+                                <span class="auction-time">03.8 hrs</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Auction Item 2 -->
+                <div class="col">
+                    <div class="card h-100 auction-card">
+                        <img src="/image`s/latest auction-2.png" class="card-img-top" alt="French Statue">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">A SMALL JUNYAO VASE & FAMILLE ROSE BRUSH POT 均窑</h5><br>
+                            <div class="auction-meta d-flex justify-content-between align-items-center mt-3">
+                                <span class="text-muted">Starts, 2/05,</span>
+                                <span class="auction-time">06.0 hrs</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Auction Item 3 -->
+                <div class="col">
+                    <div class="card h-100 auction-card">
+                        <img src="/image`s/latest auction-3.png" class="card-img-top" alt="Antique Sofa Set">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">A HOWARD & SONS DREYFUS ARMCHAIR</h5><br><br><br>
+                            <div class="auction-meta d-flex justify-content-between align-items-center mt-3">
+                                <span class="text-muted">Starts, 2/05,</span>
+                                <span class="auction-time">03.5 hrs</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Auction Item 4 -->
+                <div class="col">
+                    <div class="card h-100  auction-card">
+                        <img src="/image`s/latest-auction-5.png" class="card-img-top" alt="Portrait Oil Painting">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">A Jaeger-LeCoultre Vendome Atmos clock, c.1990s, calibre 540,</h5><br>
+                            <div class="auction-meta d-flex justify-content-between align-items-center mt-3">
+                                <span class="text-muted">Starts, 2/05,</span>
+                                <span class="auction-time">05.0 hrs</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Auction Item 5 -->
+                <div class="col">
+                    <div class="card h-100 auction-card">
+                        <img src="/image`s/latest-auction-6.png" class="card-img-top" alt="Premium Black Dialer Watch">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">CHANEL, WALLET ON CHAIN</h5><br><br><br>
+                            <div class="auction-meta d-flex justify-content-between align-items-center mt-3">
+                                <span class="text-muted">Starts, 8/05,</span>
+                                <span class="auction-time">08.0 hrs</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- auction Item 6 -->
+                <div class="col">
+                    <div class="card h-100 auction-card">
+                        <img src="/image`s/latest-auction-7.png" class="card-img-top" alt="Premium Black Dialer Watch">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Eadgar (959-975), Penny, Bust Crowned type, Neatishead?, Leofing, +eadgar rex around...</h5>
+                            <div class="auction-meta d-flex justify-content-between align-items-center mt-3">
+                                <span class="text-muted">Starts, 9/05,</span>
+                                <span class="auction-time">08.0 hrs</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- auction Item 7 -->
+                <div class="col">
+                    <div class="card h-100 auction-card">
+                        <img src="/image`s/latest-auction-4.png" class="card-img-top" alt="Premium Black Dialer Watch">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Audemars Piguet - Armbanduhr "Royal Oak Offshore"</h5><br><br>
+                            <div class="auction-meta d-flex justify-content-between align-items-center mt-3">
+                                <span class="text-muted">Starts, 9/05,</span>
+                                <span class="auction-time">08.0 hrs</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- auction Item 8 -->
+                <div class="col">
+                    <div class="card h-100 auction-card">
+                        <img src="/image`s/latest-auction-8.png" class="card-img-top" alt="Premium Black Dialer Watch">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">WWII German Third Reich Luftwaffe officers dagger stamped SMF Solingen, the blade</h5>
+                            <div class="auction-meta d-flex justify-content-between align-items-center mt-3">
+                                <span class="text-muted">Starts, 9/05,</span>
+                                <span class="auction-time">08.0 hrs</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- auction Item 9 -->
+                <div class="col">
+                    <div class="card h-100 auction-card">
+                        <img src="/image`s/latest-auction-10.png" class="card-img-top" alt="Premium Black Dialer Watch">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">CARTIER, A DIAMOND SINGLE STONE RING</h5><br><br><br>
+                            <div class="auction-meta d-flex justify-content-between align-items-center mt-3">
+                                <span class="text-muted">Starts, 9/05,</span>
+                                <span class="auction-time">08.0 hrs</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- auction Item 10 -->
+                <div class="col">
+                    <div class="card h-100 auction-card">
+                        <img src="/image`s/latest-auction-11.png" class="card-img-top" alt="Premium Black Dialer Watch">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Hupfeld Phonoliszt Violina Model A, c. 1910</h5><br><br>
+                            <div class="auction-meta d-flex justify-content-between align-items-center mt-3">
+                                <span class="text-muted">Starts, 9/05,</span>
+                                <span class="auction-time">08.0 hrs</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!-- main section  start here -->
+  <!-- TOP 3 Section -->
+    <section class="top-3-section container">
+        <h2>TOP 3</h2>
+        <hr>
+        <div class="row">
+            <!-- Example Card 1 (Duplicate for card 2 and 3) -->
+            <div class="col-md-4">
+                <div class="item-card">
+                    <div class="item-card-header">
+                        <span class="rank">#1</span>
+                        <div class="actions">
+                            <a href="#" class="icon-btn"><i class="fas fa-bell"></i></a>
+                            <a href="#" class="icon-btn"><i class="fas fa-bookmark"></i></a>
+                        </div>
+                    </div>
+                    <img src="image`s/top-3 card1.jpeg" class="img-fluid" alt="Diamond, Sapphire, Platinum Bracelet">
+                    <div class="stats">
+                        <span><i class="fas fa-gavel"></i> 142 rates</span>
+                        <span><i class="fas fa-eye"></i> 437 watching</span>
+                    </div>
+                    <p class="title">Diamond, Sapphire, Platinum-Topped Gold Bracelet</p>
+                    <p class="price">$65,400</p>
+                    <p class="countdown">Remaining: 20h 32min 13sec</p>
+                </div>
+            </div>
+            <!-- Duplicate this col-md-4 block for #2 and #3 cards -->
+            <div class="col-md-4">
+                <div class="item-card">
+                    <div class="item-card-header">
+                        <span class="rank">#2</span>
+                        <div class="actions">
+                            <a href="#" class="icon-btn"><i class="fas fa-bell"></i></a>
+                            <a href="#" class="icon-btn"><i class="fas fa-bookmark"></i></a>
+                        </div>
+                    </div>
+                    <img src="image`s/top-3 card2.jpeg" class="img-fluid" alt="Millennium Legend, Gold Coin">
+                    <div class="stats">
+                        <span><i class="fas fa-gavel"></i> 112 rates</span>
+                        <span><i class="fas fa-eye"></i> 780 watching</span>
+                    </div>
+                    <p class="title">Millennium Legend, Gold, PCGS. CAC. Kagin-4, High R.G.</p>
+                    <p class="price">$8,900</p>
+                    <p class="countdown">Remaining: 19h 11min 55sec</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="item-card">
+                    <div class="item-card-header">
+                        <span class="rank">#3</span>
+                        <div class="actions">
+                            <a href="#" class="icon-btn"><i class="fas fa-bell"></i></a>
+                            <a href="#" class="icon-btn"><i class="fas fa-bookmark"></i></a>
+                        </div>
+                    </div>
+                    <img src="image`s/top-3 card3.jpeg" class="img-fluid" alt="Victorian High-Back Armchair">
+                    <div class="stats">
+                        <span><i class="fas fa-gavel"></i> 84 rates</span>
+                        <span><i class="fas fa-eye"></i> 237 watching</span>
+                    </div>
+                    <p class="title">The Majestic Heritage Victorian High-Back Armchair</p>
+                    <p class="price">$3,100</p>
+                    <p class="countdown">Remaining: 10h 8min 2sec</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+  <!-- RATED SELLERS Section -->
+    <div class="container mt-5">
+        <div class="section-header">
+            <h2>RATED SELLERS <hr></h2>
+            <a href="#" class="see-all">See All ></a>
+        </div>
+    
+        <div class="tab-content" id="ratedSellersTabContent">
+            <div class="tab-pane fade show active" id="seller-numismatics" role="tabpanel" aria-labelledby="seller-numismatics-tab">
+                <div class="row row-cols-2 row-cols-md-3 row-cols-lg-5 g-4">
+                    <!-- Seller Card 1 -->
+                    <div class="col">
+                        <div class="card seller-card">
+                            <img src="image`s/ratted -1.jpg" class="seller-avatar" alt="Adam Smith">
+                            <div class="seller-name">Adam <br>
+                                Smith</div>
+                            <div class="seller-rating">Rating: 5.0/5.0</div>
+                        </div>
+                    </div>
+                    <!-- Seller Card 2 -->
+                    <div class="col">
+                        <div class="card seller-card">
+                            <img src="image`s/ratted-6.jpg" class="seller-avatar" alt="Emily Johnson">
+                            <div class="seller-name">Emily Johnson</div>
+                            <div class="seller-rating">Rating: 4.9/5.0</div>
+                        </div>
+                    </div>
+                    <!-- Seller Card 3 -->
+                    <div class="col">
+                        <div class="card seller-card">
+                            <img src="image`s/ratted-2.jpg" class="seller-avatar" alt="Daniel Brown">
+                            <div class="seller-name">Daniel Brown</div>
+                            <div class="seller-rating">Rating: 4.9/5.0</div>
+                        </div>
+                    </div>
+                    <!-- Seller Card 4 -->
+                    <div class="col">
+                        <div class="card seller-card">
+                            <img src="image`s/ratted-4.jpg" class="seller-avatar" alt="Sophia Lee">
+                            <div class="seller-name">Sophia <br>
+                                Lee</div>
+                            <div class="seller-rating">Rating: 4.8/5.0</div>
+                        </div>
+                    </div>
+                    <!-- Seller Card 5 -->
+                    <div class="col">
+                        <div class="card seller-card">
+                            <img src="image`s/ratted-3.jpg" class="seller-avatar" alt="Michael Wang">
+                            <div class="seller-name">Michael Wang</div>
+                            <div class="seller-rating">Rating: 4.7/5.0</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Other tab panes for sellers -->
+        </div>
+        <!-- NEWS Section -->
+        <div class="section-header">
+            <h2>NEWS <hr></h2>
+            <a href="#" class="see-all">See All ></a>
+        </div>
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+            <!-- News Card 1 -->
+            <div class="col">
+                <div class="news-card">
+                    <img src="image`s/news card-1.jpeg" class="news-img" alt="Rosetta Stone">
+                    <div class="news-date-category">1 Aug 2024 | ARCHEOLOGY</div>
+                    <div class="news-title">Rosetta Stone: first steps towards deciphering</div>
+                </div>
+            </div>
+            <!-- News Card 2 -->
+            <div class="col">
+                <div class="news-card">
+                    <img src="image`s/news card-2.jpeg" class="news-img" alt="Treasures Guide">
+                    <div class="news-date-category">26 Jun 2024 | GUIDE</div>
+                    <div class="news-title">Unlocking Treasures: The Ultimate Guide</div><br>
+                </div>
+            </div>
+            <!-- News Card 3 -->
+            <div class="col">
+                <div class="news-card">
+                    <img src="image`s/news card-3.jpeg" class="news-img" alt="Victorian Boxes">
+                    <div class="news-date-category">19 Jun 2024 | VICTORIAN ERA</div>
+                    <div class="news-title">Rare Victorian boxes top 5</div><br>
+                </div>
+            </div>
+        </div>
+        <!-- FORUM DISCUSSIONS Section -->
+        <div class="section-header">
+            <h2>FORUM DISCUSSIONS <hr></h2>
+            <a href="#" class="see-all">See All ></a>
+        </div>
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+            <!-- Discussion Card 1 -->
+            <div class="col">
+                <div class="discussion-card">
+                    <div class="discussion-meta">Jun 28, 2026 22:46 | SCAMMER</div>
+                    <div class="discussion-title">Seller kirtS - suspected fraud</div>
+                    <div class="discussion-author-comments">Author: Denis Pri | <i class="fa-regular fa-comment" style="color: rgb(0, 2, 11);"></i>  473 comments</div><br>
+                </div>
+            </div>
+            <!-- Discussion Card 2 -->
+            <div class="col">
+                <div class="discussion-card">
+                    <div class="discussion-meta">Jun 20, 2026 10:22 | ANTIQUE APPRAISALS</div>
+                    <div class="discussion-title">Seeking insights on the value of your treasured antiques?</div>
+                    <div class="discussion-author-comments">Author: Sarah Thompson |  <i class="fa-regular fa-comment" style="color: rgb(0, 2, 11);"></i>  430 comments</div>
+                </div>
+            </div>
+            <!-- Discussion Card 3 -->
+            <div class="col">
+                <div class="discussion-card">
+                    <div class="discussion-meta">Jun 18, 2026 16:56 | IDENTIFICATION</div>
+                    <div class="discussion-title">Post detailed images and information about your antiques</div>
+                    <div class="discussion-author-comments">Author: Jane Doe |   <i class="fa-regular fa-comment" style="color: rgb(0, 2, 11);"></i> 389 comments</div>
+                </div>
+            </div>
+        </div>
+    </div>
+ <!-- main section end here  -->
+  
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- footer start from here -->
+
+    <footer class="site-footer ">
+        <div class="footer-top">
+            <div class="contact-info-item">
+                <i class="fas fa-map-marker-alt icon"></i>
+                <div>
+                    <h4>Find us</h4>
+                    <p>Pakistan</p>
+                </div>
+            </div>
+            <div class="contact-info-item">
+                <i class="fas fa-phone-alt icon"></i>
+                <div>
+                    <h4>Call us</h4>
+                    <p>92+-234-5678-901</p>
+                </div>
+            </div>
+            <div class="contact-info-item">
+                <i class="fas fa-envelope icon"></i>
+                <div>
+                    <h4>Mail us</h4>
+                    <p>E-mail@info.com</p>
+                </div>
+            </div>
+        </div>
+        <div class="footer-middle">
+            <div class="footer-about">
+                <div class="footer-logo">
+                    <span class="bg-logo">AT</span> <span class="web-designer-logo">auction <br>table</span>
+                </div>
+                <p>Welcome to [Your Auction Site Name], where the thrill of the bid meets the joy of discovery! Dive
+                    into a vibrant marketplace bursting with unique treasures, rare collectibles, and everyday
+                    essentials. Whether you're hunting for a steal, selling your cherished items, or just love the rush
+                    of a last-minute bid, our community is here for you. Start exploring, start bidding, and let the
+                    adventure begin!</p>
+                <div class="social-links">
+                    <h4>Follow us</h4>
+                    <a href="#" class="social-icon facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social-icon twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-icon instagram"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="footer-links">
+                <h4>Useful Links <span class="underline"></span></h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="contact us.html">contact us</a></li>
+                    <li><a href="disclaimerpage.html">Disclimer'page</a></li>
+                    <li><a href="#">Find Art's</a></li>
+                    <li><a href="#">furniture</a></li>
+                </ul>
+                <ul>
+                    <li><a href="#">About us</a></li>
+                    <li><a href="#">painting</a></li>
+                    <li><a href="#">sitmap page</a></li>
+                    <li><a href="#">completed'auction'page</a></li>
+                    <li><a href="#">FAQ`s</a></li>
+                </ul>
+            </div>
+            <div class="footer-subscribe">
+                <h4>Subscribe <span class="underline"></span></h4>
+                <p>Don't miss to subscribe to our new feeds, kindly fill the form below.</p>
+                <form action="#">
+                    <input type="email" placeholder="Email Address">
+                    <button type="submit"><i class="fas fa-paper-plane"></i></button>
+                </form>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>Copyright © 2026, All Right Reserved <span class="highlight">Codebym.ali</span></p>
+            <nav class="footer-nav">
+                <a href="index.html">Home</a>
+                <a href="#">Terms</a>
+                <a href="#">Privacy Policy</a>
+                <a href="contact us.html">Contact</a>
+             </nav>
+       </div>
+    </footer>
+
+
+
+    <!-- end of footer -->
+
+
+
+
+    <!-- Bootstrap JS (bundle includes Popper) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+</body>
+
+</html>

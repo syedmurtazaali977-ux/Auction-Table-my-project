@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+<link rel="stylesheet" href="./Compauc.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <link rel="stylesheet" href="./Compauc.css">
+
+    <script src="./Compauc.js"></script>
+        <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+
+    <!-- navbar -->
+
+    <nav class="navbar navbar-expand-lg navbar-dark auction-navbar">
+        <div class="container-fluid">
+            <a class="navbar-brand d-flex align-items-center" href="#">
+                <img src="/furniture/Images/Auction Table Logo-01.png" alt="Logo" style="height: 75px; width: auto;">
+                AuctionsTable
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0 ">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="/index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/aboutus.html">About us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Completed Auctions/Compauct.html">Complted Auction</a>
+
+                        </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/disclaimerpage.html">Disclaimer page</a>
+
+
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/contact us.html">Contact us</a>
+                    </li>
+                </ul>
+                <div class="d-flex align-items-center">
+                    <!-- <button class="btn btn-warning sign-in-btn">Sign In / Login</button> -->
+                    <a href="/signin.html" id="loginButton" class="btn btn-warning sign-in-btn">Signin</a>
+                    <a href="/login.html" id="loginButton" class="btn btn-warning sign-in-btn" style="margin-left: 10px;">Login</a>
+
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- sub nav bar -->
+
+
+    <nav class="navbar navbar-expand-lg navbar-dark auction-sub-navbar">
+        <div class="container-fluid">
+            <ul class="navbar-nav ms-5 mb-2 mb-lg-0">
+                <li class="nav-item"><a class="nav-link" href="/furniture/furniture.html">Furniture</a></li>
+                <li class="nav-item"><a class="nav-link" href="/Vintage/vintage.html">Vintage</a></li>
+                <li class="nav-item"><a class="nav-link" href="/Arts/arts.html">Art`s</a></li>
+                <li class="nav-item"><a class="nav-link" href="/Antiques/antiques.html">Antiques</a></li>
+                <li class="nav-item"><a class="nav-link" href="/Completed Auctions/Compauct.html">Completed Auctions</a></li>
+                <li class="nav-item"><a class="nav-link" href="/Jewelry/Jewelry.html">jewelry</a></li>
+                <!-- <li class="nav-item"><a class="nav-link" href="#">Fashion</a></li> -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        Categories
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                         <li><a class="dropdown-item" href="/sitemap.html">Sitemap page</a></li>
+                        <li><a class="dropdown-item" href="/Completed Auctions/Compauct.html">Another action</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <div class="social-icons">
+                <a href="#" class="me-2"><i class="fa-solid fa-bag-shopping"></i></a>
+                <a href="#" class="me-4 "><i class="fa-solid fa-circle-user"></i></i></a>
+            </div>
+        </div>
+    </nav>
+
+
+<!-- header start -->
+
+<header class="auction-header">
+        <div class="header-content">
+            <h1>Completed Auctions</h1>
+            <h2>25 Years of Trusted Auction Excellence</h2>
+            <p>Over the past 25 years, AuctionsTable has successfully sold thousands of valuable items including luxury watches, fine art, antiques, and rare collectibles.</p>
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <i class="fas fa-calendar-alt"></i>
+                    <span>25+ Years Experience</span>
+                </div>
+                <div class="stat-item">
+                    <i class="fas fa-gavel"></i>
+                    <span>12,000+ Items Sold</span>
+                </div>
+                <div class="stat-item">
+                    <i class="fas fa-coins"></i>
+                    <span>$45M+ Auction Value</span>
+                </div>
+                <div class="stat-item">
+                    <i class="fas fa-star"></i>
+                    <span>8,000+ Happy Collectors</span>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="search-section">
+            <div class="search-bar-container">
+                <div class="sort-options">
+                    <span class="sort-label">Sort By:</span>
+                    <button class="sort-btn">Price</button>
+                    <button class="sort-btn">Date</button>
+                    <button class="sort-btn">Category</button>
+                </div>
+                <div class="search-input-wrapper">
+                    <input type="text" class="search-input" placeholder="Search sold items...">
+                    <i class="fas fa-search search-icon"></i>
+                </div>
+            </div>
+        </section>
+        <section class="auction-listings">
+            <div class="auction-card-list">
+                <!-- Example Auction Item Card 1 -->
+                <div class="auction-card">
+                    <div class="card-summary">
+                        <div class="item-image-wrapper">
+                            <img src="/Antiques/Images/90 by90-01.jpg" width="200px" height="200px" alt="Rolex Submariner" class="item-thumbnail">
+                        </div>
+                        <div class="item-details">
+                            <h3 class="item-name">Victorian Decorative Photo Frame</h3>
+                            <p class="item-price-small">Sold for: <span class="gold-text">$5,800</span></p>
+                        </div>
+                        <div class="item-sold-price">
+                            <span class="sold-label">Sold for</span>
+                            <span class="sold-price">$5,800</span>
+                        </div>
+                        <button class="expand-btn">
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                    </div>
+                    <div class="card-expanded-details">
+                        <div class="expanded-image-container">
+                            <img src="/Antiques/Images/Untitled-2-01.jpg" alt="Large Rolex Submariner" class="expanded-item-image">
+                        </div>
+                        <div class="expanded-content">
+                            <h4>Detailed Description:</h4>
+                            <p>The Antique Victorian Decorative Photo Frame is a beautiful antique collectible that reflects timeless craftsmanship and vintage elegance. Carefully designed with classic details and durable materials, this piece captures the charm and character of historical decor.
+
+Perfect for collectors or decorative display, it adds sophistication and authenticity to any interior setting.</p>
+                            <p><strong>Condition:</strong> Excellent</p>
+                            <p><strong>Year:</strong> 2005</p>
+                            <!-- <p><strong>Movement:</strong> Automatic</p> -->
+                            <div class="expanded-price-tag">
+                                <span>Final Sale Price:</span> <span class="gold-text-large">$5,800</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Example Auction Item Card 2 -->
+                <div class="auction-card">
+                    <div class="card-summary">
+                        <div class="item-image-wrapper">
+                            <img src="/Electronics/Images/90 90.jpg" alt="Victorian Oil Painting" class="item-thumbnail">
+                        </div>
+                        <div class="item-details">
+                            <h3 class="item-name">Portable Mini Projector 19</h3>
+                            <p class="item-price-small">Sold for: <span class="gold-text">$3,100</span></p>
+                        </div>
+                        <div class="item-sold-price">
+                            <span class="sold-label">Sold for</span>
+                            <span class="sold-price">$3,100</span>
+                        </div>
+                        <button class="expand-btn">
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                    </div>
+                    <div class="card-expanded-details">
+                        <div class="expanded-image-container">
+                            <img src="/Electronics/Images/300 200-01.jpg" alt="Large Victorian Oil Painting" class="expanded-item-image">
+                        </div>
+                        <div class="expanded-content">
+                            <h4>Detailed Description:</h4>
+                            <p>The Portable Mini Projector is a modern electronic device designed to deliver reliable performance and everyday convenience. Built with advanced technology and a sleek design, it offers both functionality and style for home, office, or personal use.
+
+Its user-friendly design makes it suitable for tracking daily activities and integrating with modern digital devices, making it a practical addition to any tech setup.</p>
+                            <p><strong>Artist:</strong> Unknown (circa 1880)</p>
+                            <p><strong>Medium:</strong> Oil on canvas</p>
+                            <p><strong>Dimensions:</strong> 24" x 36"</p>
+                            <div class="expanded-price-tag">
+                                <span>Final Sale Price:</span> <span class="gold-text-large">$3,100</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Example Auction Item Card 3 -->
+                <div class="auction-card">
+                    <div class="card-summary">
+                        <div class="item-image-wrapper">
+                            <img src="/Jewelry/Images/90 90-01.jpg" alt="Mahogany Grandfather Clock" class="item-thumbnail">
+                        </div>
+                        <div class="item-details">
+                            <h3 class="item-name">Sapphire Pendant Necklace</h3>
+                            <p class="item-price-small">Sold for: <span class="gold-text">$1,800</span></p>
+                        </div>
+                        <div class="item-sold-price">
+                            <span class="sold-label">Sold for</span>
+                            <span class="sold-price">$1,800</span>
+                        </div>
+                        <button class="expand-btn">
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                    </div>
+                    <div class="card-expanded-details">
+                        <div class="expanded-image-container">
+                            <img src="/Jewelry/Images/300 200-01.jpg" alt="Large Mahogany Grandfather Clock" class="expanded-item-image">
+                        </div>
+                        <div class="expanded-content">
+                            <h4>Detailed Description:</h4>
+                            <p>The Sapphire Pendant Necklace is a beautifully crafted jewelry piece designed to reflect elegance, style, and timeless beauty. Featuring fine craftsmanship and carefully selected materials, this ring adds a touch of sophistication to any jewelry collection.
+
+Its elegant design makes it suitable for both everyday wear and special occasions, offering a refined and luxurious appearance.</p>
+                            <p><strong>Era:</strong> Early 20th Century</p>
+                            <p><strong>Material:</strong> Mahogany, Brass</p>
+                            <!-- <p><strong>Height:</strong> 7 feet</p> -->
+                            <div class="expanded-price-tag">
+                                <span>Final Sale Price:</span> <span class="gold-text-large">$1,800</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- card 4 -->
+
+                <div class="auction-card">
+                    <div class="card-summary">
+                        <div class="item-image-wrapper">
+                            <img src="/Vintage/Images/90 90-01.jpg" alt="Mahogany Grandfather Clock" class="item-thumbnail">
+                        </div>
+                        <div class="item-details">
+                            <h3 class="item-name">Vintage Bicycle Bell</h3>
+                            <p class="item-price-small">Sold for: <span class="gold-text">$1,800</span></p>
+                        </div>
+                        <div class="item-sold-price">
+                            <span class="sold-label">Sold for</span>
+                            <span class="sold-price">$1,800</span>
+                        </div>
+                        <button class="expand-btn">
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                    </div>
+                    <div class="card-expanded-details">
+                        <div class="expanded-image-container">
+                            <img src="/Vintage/Images/300 200-01.jpg" alt="Large Mahogany Grandfather Clock" class="expanded-item-image">
+                        </div>
+                        <div class="expanded-content">
+                            <h4>Detailed Description:</h4>
+                            <p>The Vintage Bicycle Bell is a charming collectible that reflects the design and craftsmanship of an earlier era. With its classic appearance and authentic retro character, this item brings nostalgic beauty and timeless style to any collection or interior space.
+
+Carefully crafted with durable materials and traditional design elements, this vintage piece is ideal for collectors, decorators, or photography enthusiasts who appreciate classic design.</p>
+                            <p><strong>Era:</strong> Early 20th Century</p>
+                            <p><strong>Material:</strong> Mahogany, Brass</p>
+                            <!-- <p><strong>Height:</strong> 7 feet</p> -->
+                            <div class="expanded-price-tag">
+                                <span>Final Sale Price:</span> <span class="gold-text-large">$1,800</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <br><br><br>
+
+                <!-- card4 end -->
+
+                <!-- Add more auction cards here -->
+            </div>
+        </section>
+    </main>
+
+<!-- end here -->
+
+
+<!-- cards start -->
+
+<!-- cards end -->
+
+
+<!-- footer start from here -->
+
+    <footer class="site-footer ">
+        <div class="footer-top">
+            <div class="contact-info-item">
+                <i class="fas fa-map-marker-alt icon"></i>
+                <div>
+                    <h4>Find us</h4>
+                    <p>Pakistan</p>
+                </div>
+            </div>
+            <div class="contact-info-item">
+                <i class="fas fa-phone-alt icon"></i>
+                <div>
+                    <h4>Call us</h4>
+                    <p>92+-234-5678-901</p>
+                </div>
+            </div>
+            <div class="contact-info-item">
+                <i class="fas fa-envelope icon"></i>
+                <div>
+                    <h4>Mail us</h4>
+                    <p>E-mail@info.com</p>
+                </div>
+            </div>
+        </div>
+        <div class="footer-middle">
+            <div class="footer-about">
+                <div class="footer-logo">
+                    <span class="bg-logo">AT</span> <span class="web-designer-logo">auction <br>table</span>
+                </div>
+                <p>Welcome to [Your Auction Site Name], where the thrill of the bid meets the joy of discovery! Dive
+                    into a vibrant marketplace bursting with unique treasures, rare collectibles, and everyday
+                    essentials. Whether you're hunting for a steal, selling your cherished items, or just love the rush
+                    of a last-minute bid, our community is here for you. Start exploring, start bidding, and let the
+                    adventure begin!</p>
+                    
+                <div class="social-links">
+                    <h4>Follow us</h4>
+                    <a href="#" class="social-icon facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social-icon twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-icon instagram"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="footer-links">
+                <h4>Useful Links <span class="underline"></span></h4>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">contact us</a></li>
+                    <li><a href="#">Disclimer'page</a></li>
+                    <li><a href="#">Find Art's</a></li>
+                    <li><a href="#">furniture</a></li>
+                </ul>
+                <ul>
+                    <li><a href="#">About us</a></li>
+                    <li><a href="#">painting</a></li>
+                    <li><a href="#">sitmap page</a></li>
+                    <li><a href="#">completed'auction'page</a></li>
+                    <li><a href="#">FAQ`s</a></li>
+                </ul>
+            </div>
+            <div class="footer-subscribe">
+                <h4>Subscribe <span class="underline"></span></h4>
+                <p>Don't miss to subscribe to our new feeds, kindly fill the form below.</p>
+                <form action="#">
+                    <input type="email" placeholder="Email Address">
+                    <button type="submit"><i class="fas fa-paper-plane"></i></button>
+                </form>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>Copyright © 2026, All Right Reserved <span class="highlight">Codebym.ali</span></p>
+            <nav class="footer-nav">
+                <a href="#">Home</a>
+                <a href="#">Terms</a>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Contact</a>
+            </nav>
+        </div>
+    </footer>
+
+
+
+    <!-- end of footer -->
+
+
+    
+</body>
+</html>

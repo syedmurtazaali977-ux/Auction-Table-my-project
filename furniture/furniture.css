@@ -1,0 +1,664 @@
+body{
+    font-family: Arial;
+    background:#f4f4f4;
+    padding:0%;
+}
+
+/* Custom Navbar Styles */
+.auction-navbar {
+  background-color: #1a2a47;
+  /* Dark blue from image */
+  min-height: 50px;
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+  position: sticky;
+  top: 0;
+  z-index: 1020;
+  /* Above hero section */
+}
+
+
+.auction-navbar .navbar-brand {
+  color: #ff9800;
+  /* Gold for logo */
+  font-weight: bold;
+  font-size: 2.5rem;
+}
+
+.navber-brand {
+  display: flex;
+  align-items: center;
+  padding: 0 !important;
+  line-height: 1;
+}
+
+.auction-navbar .nav-link {
+  color: rgb(255, 255, 255);
+  margin-right: 1.5rem;
+  font-size: 1.3rem;
+}
+
+
+.auction-navbar .nav-link.active,
+.auction-navbar .nav-link:hover {
+  color: #ff8900;
+
+}
+
+.social-icons {
+  color: black;
+}
+
+
+
+
+
+.sign-in-btn {
+  background-color: #ff9800;
+  /* Gold button */
+  color: #1a2a47;
+  border: none;
+  padding: 0.5rem 1.5rem;
+  font-weight: bold;
+  border-radius: 0.25rem;
+}
+
+.sign-in-btn:hover {
+  background-color: #c7892d;
+}
+
+/* cards */
+
+.fur{
+  color:#e67e00;
+  /* text-align: center; */
+  font-weight: bold;
+  margin-top: 25px;
+}
+
+ .heading {
+            /* Using fluid units and max-width for better responsiveness */
+            font-size: clamp(1.5rem, 6vw, 3rem); /* Min 1.5rem, ideal 6vw, max 3rem */
+            font-weight: 800;
+            color: #333; /* Darker color to match the image */
+            text-align: center; /* Center the text within the padded area */
+            margin-top: 40px; /* Keep your original margin-top */
+            padding: 0 10vw; /* Using viewport width for padding to make it responsive */
+            max-width: 100%; /* Ensure it doesn't overflow */
+            box-sizing: border-box; /* Include padding in element's total width */
+        }
+        .heading hr {
+            border: none; /* Remove default border */
+            border-top: 2px solid #999; /* Changed to match the image's lighter line */
+            width: 100%;
+            margin: 0; /* Remove default margin */
+            height: 1px; /* Ensure line height is minimal */
+        }
+
+
+
+.card-container{
+    display:flex;
+    gap:20px;
+    flex-wrap:wrap;
+    justify-content: center;
+}
+
+.st{
+    font-weight: bold;
+    color: #1a2a47;
+}
+
+.sti{
+    font-weight: bold;
+    color: #e67e00;
+}
+
+.en{
+    font-weight: bold;
+    color: #1a2a47;
+}
+
+.lin{
+    background-image: url(./Images/fur.jpg);
+    height: 20px;
+}
+
+.ent{
+    font-weight: bold;
+    color: #e67e00;
+}
+
+.auction-card{
+    width:250px;
+    background:white;
+    border-radius:10px;
+    overflow:hidden;
+    box-shadow:0 5px 15px rgba(0,0,0,0.1);
+    transition:0.3s;
+}
+
+.auction-card:hover{
+    transform:translateY(-5px);
+}
+
+/* IMAGE */
+
+.image-box{
+    position:relative;
+}
+
+.image-box img{
+    width:100%;
+    display:block;
+}
+
+/* BID BUTTON */
+
+.bid-btn{
+
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    font-family: sans-serif;
+    padding:10px 20px;
+    border:none;
+    background:#ff8900;
+    color:#1a2a47;
+    font-size:14px;
+    font-weight: bold;
+    cursor:pointer;
+
+    opacity:0;
+    transition:0.3s;
+}
+
+
+
+.auction-sub-navbar {
+  background-color: #0e1a2f;
+  /* Same dark blue */
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+}
+
+.auction-sub-navbar .nav-link {
+  color: #fff;
+  padding: 0.5rem 1rem;
+  font-size: 0.95rem;
+}
+
+.auction-sub-navbar .nav-link:hover {
+  color: #ff9800;
+}
+
+
+.auction-sub-navbar .social-icons a {
+  color: #fff;
+  font-size: 18px;
+  margin-left: 15px;
+  transition: color 0.3s ease;
+}
+
+.auction-sub-navbar .social-icons a:hover {
+  color: #ff9800;
+}
+
+/* SHOW BUTTON ON HOVER */
+
+.image-box:hover .bid-btn{
+    opacity:1;
+}
+
+/* CARD CONTENT */
+
+.card-content{
+    padding:15px;
+}
+
+.card-content h3{
+    font-size:16px;
+    font-weight: bold;
+    margin-bottom:15px;
+}
+
+/* DATE ROW */
+
+.date-row{
+
+    display:flex;
+    justify-content:space-between;
+    margin-bottom:8px;
+    font-size:14px;
+    color: #1a2a47;
+}
+
+
+
+
+
+/* footer design here  */
+
+/* General Body Styles */
+
+
+/* Footer Styling */
+.site-footer {
+    background-color: #1a1a1a; /* Slightly lighter dark background for footer sections */
+    padding: 20px 0;
+    color: #ccc;
+    bottom: 0;
+    
+}
+
+
+/* Footer Top Section */
+.footer-top {
+    display: flex;
+    justify-content: space-around;
+    padding: 30px 20px;
+    border-bottom: 1px solid #333; /* Separator line */
+    flex-wrap: wrap; /* Allow items to wrap on smaller screens */
+    gap: 20px; /* Space between items */
+
+
+    
+}
+
+.contact-info-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.contact-info-item .icon {
+    font-size: 28px;
+    color: #ff8c00; /* Orange color for icons */
+}
+
+.contact-info-item h4 {
+    margin: 0;
+    font-size: 1.1em;
+    color: #fff;
+}
+
+.contact-info-item p {
+    margin: 0;
+    font-size: 0.9em;
+}
+
+/* Footer Middle Section */
+.footer-middle {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 20px;
+    flex-wrap: wrap; /* Allow items to wrap */
+    gap: 30px; /* Space between columns */
+    max-width: 1200px; /* Max width for content */
+    margin: 0 auto; /* Center content */
+}
+
+.footer-about,
+.footer-links,
+.footer-subscribe {
+    flex: 1; /* Allow columns to grow */
+    min-width: 280px; /* Minimum width for each column before wrapping */
+}
+
+.footer-about {
+    max-width: 350px; /* Give the about section a bit more room */
+}
+
+.footer-logo {
+    font-size: 1.8em;
+    font-weight: bold;
+    margin-bottom: 15px;
+    line-height: 1.1;
+}
+
+.bg-logo {
+    color: #ff8c00; /* Orange color for 'BG' */
+}
+
+.web-designer-logo {
+    color: #fff;
+    font-size: 0.8em; /* Adjust size relative to BG */
+    vertical-align: top;
+    display: inline-block; /* Helps with line breaks */
+    margin-left: 5px;
+}
+
+.footer-about p {
+    font-size: 0.9em;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.social-links h4 {
+    font-size: 1em;
+    color: #fff;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.social-links h4:after {
+    content: '';
+    display: block;
+    width: 30px;
+    height: 2px;
+    background-color: #ff8c00; /* Orange underline */
+    margin-top: 5px;
+}
+
+.social-icon {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    background-color: #080000;
+    color: #080000;
+    font-size: 18px;
+    margin-right: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.social-icon.facebook { background-color: #3b5998; }
+.social-icon.twitter { background-color: #00acee; }
+.social-icon.instagram { background-color: #C13584; }
+
+/* Footer Links */
+.footer-links {
+    display: flex;
+    gap: 40px; /* Space between the two link columns */
+}
+
+.footer-links h4,
+.footer-subscribe h4 {
+    font-size: 1.1em;
+    color: #fff;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.footer-links h4 .underline,
+.footer-subscribe h4 .underline {
+    content: '';
+    display: block;
+    width: 30px;
+    height: 2px;
+    background-color: #ff8c00; /* Orange underline */
+    margin-top: 5px;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-links ul li {
+    margin-bottom: 10px;
+}
+
+.footer-links ul li a {
+    color: #ccc;
+    text-decoration: none;
+    font-size: 0.9em;
+    transition: color 0.3s ease;
+}
+
+.footer-links ul li a:hover {
+    color: #ff8c00;
+}
+
+/* Footer Subscribe */
+.footer-subscribe p {
+    font-size: 0.9em;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.footer-subscribe form {
+    display: flex;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.footer-subscribe input[type="email"] {
+    flex-grow: 1;
+    padding: 10px 15px;
+    border: none;
+    background-color: #333;
+    color: #fff;
+    font-size: 0.9em;
+    outline: none;
+}
+
+.footer-subscribe input[type="email"]::placeholder {
+    color: #888;
+}
+
+.footer-subscribe button {
+    background-color: #ff8c00; /* Orange button */
+    border: none;
+    padding: 10px 15px;
+    color: #fff;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.footer-subscribe button:hover {
+    background-color: #e67e00;
+}
+
+/* Footer Bottom Section */
+.footer-bottom {
+    background-color: #111; /* Even darker background for copyright */
+    padding: 20px;
+    text-align: center;
+    font-size: 0.85em;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid #333;
+    max-width: 100%;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+.footer-bottom p {
+    margin: 5px 10rem;
+}
+
+.footer-bottom .highlight {
+    color: #ff8c00;
+    font-weight: bold;
+}
+
+.footer-nav a {
+    color: #ccc;
+    text-decoration: none;
+    margin: 0 -120px;
+    transition: color 0.3s ease;
+    margin-right: 10rem;
+}
+
+.footer-nav a:hover {
+    color: #ff8c00;
+}
+
+  /* footer  css desining end here  */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* header responsiveness  here start*/
+/* Responsive adjustments */
+@media (max-width: 991.98px) {
+
+  /* Medium devices and down */
+  .hero-categories {
+    flex-wrap: wrap;
+    /* Allow buttons to wrap */
+    bottom: auto;
+    top: 85%;
+    /* Adjust position for smaller screens */
+    transform: translateY(-50%);
+    padding: 0 10px;
+  }
+
+  .hero-cat-btn {
+    margin: 5px;
+    min-width: unset;
+    flex-grow: 1;
+    /* Allow buttons to grow */
+  }
+
+  .auction-navbar .d-flex.align-items-center .nav-link {
+    display: none !important;
+    /* Hide social icons on small screens */
+  }
+}
+
+@media (max-width: 767.98px) {
+
+  /* Small devices and down */
+  .hero-content h1 {
+    font-size: 2.0rem;
+  }
+
+  .hero-content p {
+    font-size: 1.2rem;
+  }
+
+  .hero-cat-btn {
+    font-size: 0.9rem;
+    padding: 0.6rem 1rem;
+  }
+
+  .auction-sub-navbar .navbar-nav {
+    flex-direction: column;
+    /* Stack sub-nav items */
+    text-align: center;
+  }
+}
+
+/* footer responsiveness */
+@media (max-width:1030px) {
+  .mb-30 {
+    margin-bottom: 30px;
+  }
+
+  .footer-text p,
+  .footer-social-icon {
+    margin-bottom: 30px;
+  }
+}
+
+/* here end  */
+
+/* footer responsiveness start here  */
+/* Responsive Adjustments */
+@media (max-width: 992px) {
+    .footer-top {
+        justify-content: center;
+    }
+
+    .footer-middle {
+        flex-direction: column; /* Stack columns vertically */
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer-about,
+    .footer-links,
+    .footer-subscribe {
+        min-width: unset; /* Remove min-width to allow more flexibility */
+        max-width: 100%; /* Take full width */
+        margin-bottom: 30px;
+    }
+
+    .footer-links {
+        flex-direction: column; /* Stack link lists */
+        gap: 20px;
+        align-items: center;
+    }
+
+    .footer-links ul {
+        text-align: center;
+    }
+
+    .footer-links h4:after,
+    .footer-subscribe h4:after,
+    .social-links h4:after {
+        margin: 5px auto 0; /* Center the underlines */
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+    }
+
+    .footer-nav {
+        margin-top: 15px;
+    }
+}
+
+@media (max-width: 576px) {
+    .footer-top {
+        flex-direction: column; /* Stack contact items vertically */
+        align-items: flex-start;
+        padding: 20px;
+    }
+    
+    .contact-info-item {
+        width: 100%; /* Full width for individual contact items */
+        margin-bottom: 15px;
+    }
+
+    .footer-middle {
+        padding: 30px 15px;
+    }
+
+    .footer-bottom {
+        padding: 15px;
+    }
+
+    .footer-nav a {
+        margin: 0 5px; /* Reduce spacing for footer navigation links */
+    }
+}
+/* footer responsiveness end here  */
